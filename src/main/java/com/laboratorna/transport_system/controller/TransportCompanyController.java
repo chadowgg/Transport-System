@@ -13,7 +13,7 @@ import java.util.List;
 public class TransportCompanyController {
     private final TransportCompanyService transportCompanyService;
 
-    TransportCompanyController(TransportCompanyService transportCompanyService) {
+    public TransportCompanyController(TransportCompanyService transportCompanyService) {
         this.transportCompanyService = transportCompanyService;
     }
 
@@ -34,7 +34,7 @@ public class TransportCompanyController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<TransportCompanyDTO> deletecompany(@PathVariable Long id) {
+    public ResponseEntity<TransportCompanyDTO> deleteCompany(@PathVariable Long id) {
         transportCompanyService.deleteCompany(id);
         return ResponseEntity.noContent().build();
     }

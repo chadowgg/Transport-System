@@ -7,8 +7,11 @@ import lombok.Data;
 @Data
 public class DriverDTO {
     private Long driver_id;
+
     private TransportCompany transport_company_id;
+
     private String last_name;
+
     private String first_name;
 
     private Integer work_experience;
