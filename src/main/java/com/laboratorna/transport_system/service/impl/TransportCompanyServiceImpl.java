@@ -8,10 +8,12 @@ import com.laboratorna.transport_system.entity.TransportCompany;
 import com.laboratorna.transport_system.repository.TransportCompanyRepository;
 import com.laboratorna.transport_system.service.TransportCompanyService;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class TransportCompanyServiceImpl implements TransportCompanyService {
 
     private final TransportCompanyRepository transportCompanyRepository;

@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public interface DriverService {
     DriverDTO createDriver(DriverDTO dto);
     DriverDTO getDriverById(Long id);
