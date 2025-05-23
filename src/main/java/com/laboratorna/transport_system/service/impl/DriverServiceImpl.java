@@ -17,7 +17,7 @@ public class DriverServiceImpl implements DriverService {
 
     public DriverServiceImpl(DriverRepository driverRepository) {
         this.driverRepository = driverRepository;
-        this.mapper = new ModelMapper(); // можна @Bean зробити
+        this.mapper = new ModelMapper();
     }
 
     @Override
