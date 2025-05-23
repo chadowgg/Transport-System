@@ -7,6 +7,6 @@ import java.util.List;
 public interface TransportCompanyService {
     TransportCompanyDTO createCompany(TransportCompanyDTO dto);
     TransportCompanyDTO getCompanyById(Long id);
-    List<TransportCompanyDTO> getAllCompany();
+    List<TransportCompanyDTO> getAllCompanies();
     void deleteCompany(Long id);
 }

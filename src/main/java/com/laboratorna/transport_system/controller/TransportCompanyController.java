@@ -30,7 +30,7 @@ public class TransportCompanyController {
 
     @GetMapping
     public ResponseEntity<List<TransportCompanyDTO>> getAllCompany() {
-        return ResponseEntity.ok(transportCompanyService.getAllCompany());
+        return ResponseEntity.ok(transportCompanyService.getAllCompanies());
     }
 
     @DeleteMapping("/{id}")

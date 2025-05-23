@@ -36,7 +36,7 @@ public class TransportCompanyServiceImpl implements TransportCompanyService {
     }
 
     @Override
-    public List<TransportCompanyDTO> getAllCompany() {
+    public List<TransportCompanyDTO> getAllCompanies() {
         return transportCompanyRepository.findAll().stream()
                 .map(transportCompany -> mapper.map(transportCompany, TransportCompanyDTO.class))
                 .collect(Collectors.toList());
