@@ -1,9 +1,7 @@
 package com.laboratorna.transport_system.service.impl;
 
 import com.laboratorna.transport_system.dto.RouteDTO;
-import com.laboratorna.transport_system.dto.ServiceStationDTO;
 import com.laboratorna.transport_system.entity.Route;
-import com.laboratorna.transport_system.entity.ServiceStation;
 import com.laboratorna.transport_system.repository.RouteRepository;
 import com.laboratorna.transport_system.service.RouteService;
 import org.modelmapper.ModelMapper;
@@ -13,11 +11,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class RouteImpl implements RouteService {
+public class RouteServiceImpl implements RouteService {
     private RouteRepository routeRepository;
     private ModelMapper mapper;
 
-    public RouteImpl(RouteRepository routeRepository) {
+    public RouteServiceImpl(RouteRepository routeRepository) {
         this.routeRepository = routeRepository;
         mapper = new ModelMapper();
     }
