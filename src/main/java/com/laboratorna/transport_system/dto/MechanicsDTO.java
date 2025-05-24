@@ -1,8 +1,6 @@
 package com.laboratorna.transport_system.dto;
 
 import com.laboratorna.transport_system.entity.ServiceStation;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
 @Data

@@ -2,7 +2,6 @@ package com.laboratorna.transport_system.service.impl;
 
 import com.laboratorna.transport_system.dto.DriverRouteDTO;
 import com.laboratorna.transport_system.entity.DriverRoute;
-import com.laboratorna.transport_system.entity.embedded.DriverRouteId;
 import com.laboratorna.transport_system.repository.DriverRouteRepository;
 import com.laboratorna.transport_system.service.DriverRouteService;
 import org.modelmapper.ModelMapper;

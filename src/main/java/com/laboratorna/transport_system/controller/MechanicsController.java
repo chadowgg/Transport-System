@@ -1,9 +1,7 @@
 package com.laboratorna.transport_system.controller;
 
-import com.laboratorna.transport_system.dto.DriverDTO;
 import com.laboratorna.transport_system.dto.MechanicsDTO;
 import com.laboratorna.transport_system.service.MechanicsService;
-import jakarta.persistence.GeneratedValue;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

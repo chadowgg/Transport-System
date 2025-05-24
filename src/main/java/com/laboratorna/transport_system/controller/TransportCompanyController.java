@@ -1,6 +1,5 @@
 package com.laboratorna.transport_system.controller;
 
-import com.laboratorna.transport_system.dto.DriverDTO;
 import com.laboratorna.transport_system.dto.TransportCompanyDTO;
 import com.laboratorna.transport_system.service.TransportCompanyService;
 import org.springframework.http.ResponseEntity;

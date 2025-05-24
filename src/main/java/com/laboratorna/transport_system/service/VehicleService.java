@@ -1,6 +1,5 @@
 package com.laboratorna.transport_system.service;
 
-import com.laboratorna.transport_system.dto.TransportCompanyDTO;
 import com.laboratorna.transport_system.dto.VehicleDTO;
 
 import java.util.List;

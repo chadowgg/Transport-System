@@ -1,7 +1,6 @@
 package com.laboratorna.transport_system.controller;
 
 import com.laboratorna.transport_system.dto.VehicleDTO;
-import com.laboratorna.transport_system.repository.VehicleRepository;
 import com.laboratorna.transport_system.service.VehicleService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

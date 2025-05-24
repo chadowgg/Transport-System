@@ -1,6 +1,5 @@
 package com.laboratorna.transport_system.entity;
 
-import com.fasterxml.jackson.databind.annotation.EnumNaming;
 import com.laboratorna.transport_system.entity.enums.TypeTransport;
 import jakarta.persistence.*;
 import lombok.Data;

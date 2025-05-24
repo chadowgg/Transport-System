@@ -1,6 +1,5 @@
 package com.laboratorna.transport_system.service.impl;
 
-import com.laboratorna.transport_system.dto.DriverDTO;
 import com.laboratorna.transport_system.dto.VehicleDTO;
 import com.laboratorna.transport_system.entity.Vehicle;
 import com.laboratorna.transport_system.repository.VehicleRepository;
