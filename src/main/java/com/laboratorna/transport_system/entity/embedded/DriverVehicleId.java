@@ -7,8 +7,8 @@ import java.io.Serializable;
 
 @Data
 @Embeddable
-public class DriverRouteId implements Serializable {
+public class DriverVehicleId implements Serializable {
     private Long driver_id;
 
-    private Long route_id;
+    private Long vehicle_id;
 }
