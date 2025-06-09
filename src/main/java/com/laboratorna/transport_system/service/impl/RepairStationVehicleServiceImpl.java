@@ -21,6 +21,13 @@ public class RepairStationVehicleServiceImpl implements RepairStationVehicleServ
     }
 
     @Override
+    public RepairStationVehicleDTO createRepairStationVehicle(RepairStationVehicleDTO dto) {
+        RepairStationVehicle repairStationVehicle = mapper.map(dto, RepairStationVehicle.class);
+        repairStationVehicle = repairStationVehicleRepository.save(repairStationVehicle);
+        return mapper.map(repairStationVehicle, RepairStationVehicleDTO.class);
+    }
+
+    @Override
     public RepairStationVehicleDTO getRepairStationVehicleById(Long id) {
         RepairStationVehicle repairStationVehicle = repairStationVehicleRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Repair station vehicle not found"));
@@ -32,5 +39,10 @@ public class RepairStationVehicleServiceImpl implements RepairStationVehicleServ
         return repairStationVehicleRepository.findAll().stream()
                 .map(repairStation -> mapper.map(repairStation, RepairStationVehicleDTO.class))
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public void deleteRepairStationVehicle(Long id) {
+        repairStationVehicleRepository.deleteById(id);
     }
 }

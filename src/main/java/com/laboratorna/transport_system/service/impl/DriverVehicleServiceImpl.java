@@ -21,6 +21,13 @@ public class DriverVehicleServiceImpl implements DriverVehicleService {
     }
 
     @Override
+    public DriverVehicleDTO createDriverVehicle(DriverVehicleDTO dto) {
+        DriverVehicle driverVehicle = mapper.map(dto, DriverVehicle.class);
+        driverVehicle = driverVehicleRepository.save(driverVehicle);
+        return mapper.map(driverVehicle, DriverVehicleDTO.class);
+    }
+
+    @Override
     public DriverVehicleDTO getDriverVehicleById(Long id) {
         DriverVehicle driverVehicle = driverVehicleRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("DriverRoute not found"));
@@ -32,5 +39,10 @@ public class DriverVehicleServiceImpl implements DriverVehicleService {
         return driverVehicleRepository.findAll().stream()
                 .map(vehicle -> mapper.map(vehicle, DriverVehicleDTO.class))
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public void deleteDriverVehicle(Long id) {
+        driverVehicleRepository.deleteById(id);
     }
 }
